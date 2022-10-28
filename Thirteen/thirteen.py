@@ -6,3 +6,5 @@ for i in range(100):
    
 solution = str(sum)[0:10]
 print(solution)
+
+# solution is 5537376230
