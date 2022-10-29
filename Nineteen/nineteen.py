@@ -61,7 +61,8 @@ for i in range(days):
 
 print(sundays_on_first)
 
-
+#solution is 171
+#can also use the datetime module and make it ~10 lines
 
 
 
