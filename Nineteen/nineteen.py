@@ -22,9 +22,7 @@ sundays_on_first = 0
 
 days = 36524
 for i in range(days):
-	print(str(cur_day_of_week) + ", " + str(day_of_month) + ", " + str(month) + ", " + str(cur_year))
-	if (cur_day_of_week == "sun" and day_of_month == 1):
-		sundays_on_first += 1
+	
 
 	# move to next day of week
 	if (cur_day_of_week == "sun"):
@@ -57,7 +55,11 @@ for i in range(days):
 		else:
 			month = months[months.index(month) + 1]
 
+	if (cur_day_of_week == "sun" and day_of_month == 1 and cur_year > 1900 and cur_year < 2001):
+		sundays_on_first += 1
+		print(str(cur_day_of_week) + ", " + str(day_of_month) + ", " + str(month) + ", " + str(cur_year))
 
+print(sundays_on_first)
 
 
 
